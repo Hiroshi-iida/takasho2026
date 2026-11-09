@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>じゃんけん3回勝負</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">TAKASHO 2026</p>
+    <h1>じゃんけん3回勝負</h1>
+    <p>コンピューターと3回勝負！手を選んでね。</p>
+    <div class="score" aria-label="現在のスコア">
+      <div>あなた <strong id="player-score">0</strong></div><span>―</span><div><strong id="computer-score">0</strong> コンピューター</div>
+    </div>
+    <p id="round">1回戦</p>
+    <div class="hands" aria-label="出す手を選ぶ">
+      <button type="button" data-hand="0">✊<span>グー</span></button>
+      <button type="button" data-hand="1">✌️<span>チョキ</span></button>
+      <button type="button" data-hand="2">✋<span>パー</span></button>
+    </div>
+    <div id="result" class="result" aria-live="polite">じゃんけん、ぽん！</div>
+    <ol id="history" aria-label="対戦履歴"></ol>
+    <button id="restart" class="restart" type="button" hidden>もう一度あそぶ</button>
+  </main>
+</body>
+</html>
